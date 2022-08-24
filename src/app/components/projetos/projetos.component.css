@@ -1,0 +1,28 @@
+.container{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.col-sm-4{
+    transition: transform .3s;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.col-sm-4:hover{
+    transform: scale(1.1)
+}
+
+.btn{
+    transition: transform .2s;
+    color: white;
+    background: -webkit-linear-gradient(left, #ed7551, #f12ea0);
+    background: -moz-linear-gradient(left, #ed7551, #f12ea0);
+    background: -ms-linear-gradient(left, #ed7551, #f12ea0);
+    background: -o-linear-gradient(left, #ed7551, #f12ea0);
+    background: linear-gradient(to right, #ed7551, #f12ea0);
+}
+.btn:hover{
+    transform: scale(1.2)
+}
