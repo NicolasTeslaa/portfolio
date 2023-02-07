@@ -1,4 +1,5 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
+declare var jQuery: any;
 
 @Component({
   selector: 'app-projetos',
@@ -9,10 +10,10 @@ export class ProjetosComponent implements OnInit {
 
   constructor(private el: ElementRef) { }
 
-  toogleMenu() { 
-  
-    let myTag = this.el.nativeElement.querySelector("#sidebarToggle"); 
-    myTag.classList.toggle('sidenav-toggled');  
+  toogleMenu() {
+
+    let myTag = this.el.nativeElement.querySelector("#sidebarToggle");
+    myTag.classList.toggle('sidenav-toggled');
     document.body.classList.toggle('sidenav-toggled');
   }
   ngOnInit(): void {
