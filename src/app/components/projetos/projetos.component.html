@@ -10,8 +10,8 @@
                     role="tab" aria-controls="home" aria-selected="true">Sistemas Gerenciais em Angular JS</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
-                    role="tab" aria-controls="profile" aria-selected="false">HTML e CSS Puro</button>
+                <button class="nav-link" id="htmlpuro-tab" data-bs-toggle="tab" data-bs-target="#htmlpuro" type="button"
+                    role="tab" aria-controls="htmlpuro" aria-selected="false">HTML e CSS Puro</button>
             </li>
             <li class="nav-item" role="presentation">
                 <button class="nav-link" id="produtos-tab" data-bs-toggle="tab" data-bs-target="#produtos" type="button"
@@ -19,7 +19,7 @@
             </li>
             <li class="nav-item" role="presentation">
                 <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button"
-                    role="tab" aria-controls="contact" aria-selected="false">Clientes</button>
+                    role="tab" aria-controls="contact" aria-selected="false">Freelances</button>
             </li>
         </ul>
         <div class="tab-content" id="myTabContent">
@@ -68,16 +68,9 @@
                     </div>
                 </div>
             </div>
-            <div class="tab-pane fade mt-2" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="tab-pane fade mt-2" id="htmlpuro" role="tabpanel" aria-labelledby="htmlpuro-tab">
                 <div class="row mt-4">
-                    <div class="col-sm-4">
-                        <div class="card">
-                            <img src="../../../assets/img/projetos/valordeumavidaicone.png" alt="">
-                        </div>
-                        <div class="card-footer">
-                            <a href="" class="btn ">Ver mais detalhes</a>
-                        </div>
-                    </div>
+
                     <div class="col-sm-4">
                         <div class="card">
                             <img src="../../../assets/img/projetos/reencontrowicone.png" alt="">
@@ -123,12 +116,46 @@
                     </div>
                 </div>
                 <div class="row mt-4">
+
+
+                   
+                </div>
+            </div>
+            <div class="tab-pane fade mt-2" id="produtos" role="tabpanel" aria-labelledby="produtos-tab">
+                <div class="row mt-4">
                     <div class="col-sm-4">
                         <div class="card">
-                            <img src="../../../assets/img/projetos/escolaagilicone.png" alt="">
+                            <img src="../../../assets/img/projetos/calculadoraimcicone.png" alt="">
                         </div>
                         <div class="card-footer">
                             <a href="" class="btn ">Ver mais detalhes</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img src="../../../assets/img/projetos/embreveicone.png" alt="">
+                        </div>
+                        <div class="card-footer">
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img src="../../../assets/img/projetos/embreveicone.png" alt="">
+
+                        </div>
+                        <div class="card-footer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade mt-2" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img src="../../../assets/img/projetos/valordeumavidaicone.png" alt="">
+                        </div>
+                        <div class="card-footer">
+                            <a href="http://valordeumavida.com.br/#" target="_blank" class="btn ">Ver mais detalhes</a>
                         </div>
                     </div>
                     <div class="col-sm-4">
@@ -136,7 +163,7 @@
                             <img src="../../../assets/img/projetos/fibonappsicone.png" alt="">
                         </div>
                         <div class="card-footer">
-                            <a href="" class="btn ">Ver mais detalhes</a>
+                            <a href="https://www.fibonapps.com.br" target="_blank" class="btn ">Ver mais detalhes</a>
                         </div>
                     </div>
                     <div class="col-sm-4">
@@ -144,40 +171,14 @@
                             <img src="../../../assets/img/projetos/escolaagilicone.png" alt="">
                         </div>
                         <div class="card-footer">
-                            <a href="" class="btn ">Ver mais detalhes</a>
+                            <a href="" class="btn" data-bs-toggle="modal" data-bs-target="#modalEscolaAgil">Ver mais
+                                detalhes</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="tab-pane fade mt-2" id="produtos" role="tabpanel" aria-labelledby="produtos-tab">
-            <div class="row mt-4">
-                <div class="col-sm-4">
-                    <div class="card">
-                        <img src="../../../assets/img/projetos/calculadoraimcicone.png" alt="">
-                    </div>
-                    <div class="card-footer">
-                        <a href="" class="btn ">Ver mais detalhes</a>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="card">
-                        <img src="../../../assets/img/projetos/embreveicone.png" alt="">
-                    </div>
-                    <div class="card-footer">
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="card">
-                        <img src="../../../assets/img/projetos/embreveicone.png" alt="">
 
-                    </div>
-                    <div class="card-footer">
-                    </div>
-                </div>
-            </div>
         </div>
-        <div class="tab-pane fade mt-2" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
 
 
 
@@ -367,22 +368,51 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <h2 class="text-center">Descrição do Projeto</h2>
-                                <p>A Fullpass é uma plataforma de assinatura de academias que visa fornecer aos usuários
-                                    acesso a uma ampla gama de opções de atividades físicas em diversos locais. O
-                                    objetivo é oferecer flexibilidade e conveniência aos usuários, permitindo que eles
-                                    experimentem diferentes tipos de exercícios e encontrem a atividade ideal para
-                                    atender às suas necessidades e objetivos de fitness.</p>
+                                <p>É uma aplicação que permite registrar, controlar e calcular o tempo que os
+                                    funcionários passam trabalhando. No sistema, o
+                                    usuário seleciona um profissional e o seu cargo específico e adiciona as horas
+                                    trabalhadas por ele. Com base nestas informações, o sistema realiza o cálculo do
+                                    valor a ser pago ao funcionário, usando um salário base pré-definido para aquele
+                                    cargo.
+                                    <br>
+
+                                    O sistema pode incluir vários recursos, como a capacidade de controlar as horas
+                                    extras, a possibilidade de gerar relatórios de horas trabalhadas, e a integração com
+                                    outros sistemas de pagamento, como folha de pagamento. Além disso, ele pode ser
+                                    acessado a partir de qualquer lugar, através de uma conexão à internet, o que
+                                    facilita o registro das horas trabalhadas pelos funcionários.
+                                    <br>
+                                    Em resumo, esse sistema é uma ferramenta útil para as
+                                    empresas que desejam ter um controle preciso sobre as horas trabalhadas pelos seus
+                                    funcionários e calcular o pagamento correto com base nessas informações.
+                                </p>
                                 <br>
                                 <h3 class="text-center">Opinião individual</h3>
                                 <p>
-                                    Neste projeto realizei diversos C.R.U.D.S, sempre consumindo API's Rests usando
-                                    https
-                                    requests.<br>Nenhum dos dados apresentados na tela foram mocks, todos eles são dados
-                                    reais sendo consumidos e encaminhado através de services.<br> Nesse projeto não tive
-                                    nenhuma dificuldade e tudo foi realizado dentro do meu nivel de conhecimento, não
-                                    havendo desafios. </p>
+                                    Este projeto me desafiou em diversas tecnologias, principalmente porque foi o
+                                    primeiro projeto que tive que realizar algumas alterações dentro do banco de dados
+                                    que já estava em produção até o momento
                             </div>
                         </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-red" style="margin-right: 5px ;"
+                            data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal EscolaÁgil -->
+        <div class="modal fade" id="modalEscolaAgil" tabindex="-1" aria-labelledby="modalEscolaAgil" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="modalEscolaAgillLabel">Escola Ágil</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex justify-content-center align-items-center">
+                        <img src="../../../assets/img/projetos/provasCabais/escolaAgil/escolaAgil.png" alt="">
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-red" style="margin-right: 5px ;"
