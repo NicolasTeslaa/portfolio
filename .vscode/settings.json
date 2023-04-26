@@ -1,8 +1,0 @@
-{
-    "appService.zipIgnorePattern": [
-        "node_modules{,/**}",
-        ".vscode{,/**}"
-    ],
-    "appService.defaultWebAppToDeploy": "/subscriptions/ab575478-3699-4c5c-b085-b78c888b4339/resourceGroups/nicolastesla_group-9e86/providers/Microsoft.Web/sites/nicolastesla",
-    "appService.deploySubpath": "dist"
-}
